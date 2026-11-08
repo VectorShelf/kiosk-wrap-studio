@@ -16,10 +16,10 @@
 
 ## الملفات
 
-- `index.html`: نسخة تشغيل مستقلة، تشمل التطبيق والمراجع، وتعمل مباشرة على GitHub Pages.
+- `index.html` و`app.js`: نسخة تشغيل جاهزة تشمل التطبيق والمراجع وتعمل مباشرة على GitHub Pages.
 - `kiosk-wrap-studio-source.zip`: المصدر الكامل بـ React + TypeScript + Vite والاختبارات ودليل التشغيل.
 - `.nojekyll`: تقديم الموقع الثابت مباشرة دون معالجة Jekyll.
 
-للتطوير: فك أرشيف المصدر ثم `npm install` و`npm run dev`. لتحديث هذا الإصدار: `npm run build:standalone` ثم ارفع `deployment/index.html` إلى المستودع. إعداد Pages الحالي: الفرع `main` والمجلد الجذر `/`.
+للتطوير: فك أرشيف المصدر ثم `npm install` و`npm run dev`. لتحديث هذا الإصدار: `npm run build:standalone` ثم ارفع `deployment/index.html` و`deployment/app.js` إلى المستودع. إعداد Pages الحالي: الفرع `main` والمجلد الجذر `/`.
 
 نجح البناء و37 اختبارًا. لم يُختبر تشغيل JSX داخل Adobe Illustrator؛ اتبع خطوات التحقق الميداني في README داخل المصدر قبل الطباعة.
