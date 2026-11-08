@@ -1,2 +1,25 @@
-# kiosk-wrap-studio
-Arabic kiosk measurement and Illustrator wrap-template studio with mobile script sharing.
+# Kiosk Wrap Studio
+
+[افتح التطبيق من الجوال أو الكمبيوتر](https://vectorshelf.github.io/kiosk-wrap-studio/)
+
+تطبيق عربي لقياس جهاز Kiosk وتوليد قوالب تغليف Vector في Adobe Illustrator.
+
+## من الجوال إلى Illustrator
+
+1. افتح الموقع وأدخل القياسات الفعلية.
+2. اختر «التصدير» ثم «إنشاء رابط السكريبت».
+3. انسخ الرابط وأرسله إلى الكمبيوتر.
+4. افتح الرابط ونزّل ملف `kiosk-template.jsx`.
+5. في Illustrator: **File → Scripts → Other Script** ثم اختر الملف.
+
+الرابط يحمل نسخة ثابتة من السكريبت نفسه. لا يتضمن صور المشروع، ولا يزامن مشروعاتك بين الأجهزة. من يملك الرابط يستطيع قراءة السكريبت وقياساته. بعد تعديل القياسات أنشئ رابطًا جديدًا. القياسات لا تُستنتج من الصور، والقالب لا يعتمد للإنتاج دون اختبار تطابق فعلي.
+
+## الملفات
+
+- `index.html`: نسخة تشغيل مستقلة، تشمل التطبيق والمراجع، وتعمل مباشرة على GitHub Pages.
+- `kiosk-wrap-studio-source.zip`: المصدر الكامل بـ React + TypeScript + Vite والاختبارات ودليل التشغيل.
+- `.nojekyll`: تقديم الموقع الثابت مباشرة دون معالجة Jekyll.
+
+للتطوير: فك أرشيف المصدر ثم `npm install` و`npm run dev`. لتحديث هذا الإصدار: `npm run build:standalone` ثم ارفع `deployment/index.html` إلى المستودع. إعداد Pages الحالي: الفرع `main` والمجلد الجذر `/`.
+
+نجح البناء و37 اختبارًا. لم يُختبر تشغيل JSX داخل Adobe Illustrator؛ اتبع خطوات التحقق الميداني في README داخل المصدر قبل الطباعة.
